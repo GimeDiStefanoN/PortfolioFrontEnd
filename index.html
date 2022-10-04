@@ -12,7 +12,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <section class="inicio">
+
+  <!-- SECCION ENCABEZADO   -->
+  <section id="inicio" class="inicio">
     <div class="contenido">
         <header>
             <div class="contenido-header">
@@ -22,11 +24,12 @@
                 <!-- Menú -->
                 <nav id="nav" class="">
                     <ul id="links">
-                        <li><a href="inicio">INICIO</a></li>
-                        <li><a href="experiencia">EXPERIENCIA</a></li>
-                        <li><a href="educacion">EDUCACION</a></li>
-                        <li><a href="habilidades">HABILIDADES</a></li>
-                        <li><a href="proyectos">MIS PROYECTOS</a></li>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#sobremi">SOBRE MI</a></li>
+                        <li><a href="#experiencia">EXPERIENCIA</a></li>
+                        <li><a href="#educacion">EDUCACION</a></li>
+                        <li><a href="#habilidades">HABILIDADES</a></li>
+                        <li><a href="#proyectos">MIS PROYECTOS</a></li>
                     </ul>
                 </nav>
 
@@ -43,17 +46,29 @@
                 </div>
             </div>
         </header>
+        <div class="presentacion">
+            <p class="bienvenida">BIENVENIDOS</p>
+            <h1 class="descripcion">Soy <span>Gimena Di Stefano Nicolina</span>,</h1>
+            <h2 class="tituloPresentacion"> FULL STACK DEVELOPER JR.</h2>
+        </div>
     </div>
   </section>
 
-    <!-- <div>Acerca de...
-        <div>Foto perfil</div>
-        <div>Gimena Di Stefano Nicolina</div>
-        <div>Full Stack Developer Jr</div>
-        <div>resumen de mi</div>
-    </div>
+  <!-- SECCION ACERCA DE MI -->
+  <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="assets/foto-perfil-gdn.jpg" alt="foto de perfil">
+        </div>
+        <div class="descripcion">
+            <p class="titulo-seccion">SOBRE MI</p>
+            <h2 class="nombre-completo">¡Hola! Soy, <span>Gimena Di Stefano Nicolina</span></h2>
+            <h3 class="titulo">Full Stack Developer Jr.</h3>
+            <p class="text-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam optio itaque explicabo minus quia tempore</p>
+        </div>
+</section>
 
-    <div>Experiencia
+
+   <!--  <div>Experiencia
         <div>Empresa1
             <h3>Titulo puesto</h3>
             <p>periodo</p>
@@ -85,6 +100,7 @@
         </div>
     </div> -->
 
+    <!-- SECCION FOOTER -->
     <section class="footer">
         <div id="footer" class="copyright">
             <p class="copy"> Todos los derechos reservados GDN Dev - 2022</p>

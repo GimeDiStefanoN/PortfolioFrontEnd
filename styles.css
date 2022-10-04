@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;600&display=swap');
 
+/* BODY */
 *{
   margin:0;
   padding:0;
@@ -11,11 +12,13 @@ html{
   scroll-behavior: smooth;
 }
 
+/* SECCION ENCABEZADO */
+
 .inicio {
-  background:  url("./assets/banner_portfolio.jpeg");
+  background: url("./assets/banner_portfolio.jpeg");
   background-size: cover;
   background-position: center center;
-  height: 95vh;
+  height: 100vh;
 }
 
 .contenido-header{
@@ -64,6 +67,95 @@ html{
   display: none;
 }
 
+.presentacion{
+  max-width: 1100px;
+  height: 100vh;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bienvenida{
+  font-size: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.descripcion h1{
+  font-size: 75px;
+}
+
+.descripcion span{
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(173, 20, 50);
+}
+
+.tituloPresentacion{
+padding: 15px;
+}
+
+/* SECCION SOBRE MI */
+
+#sobremi{
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: black;
+  display: flex;
+}
+
+.contenedor-foto{
+  max-width: 500px;
+  margin-right: 65px;
+}
+
+.contenedor-foto img{
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(190, 190, 190);
+}
+
+.descripcion{
+  margin: 0 20px;
+}
+
+.titulo-seccion{
+  font-size: 25px;
+  text-decoration: underline 5px;
+  text-decoration-color: rgb(190, 190, 190);
+}
+
+.nombre-completo{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 25px 5px;
+  letter-spacing: 3px;
+}
+.nombre-completo span{
+  color: rgb(173, 20, 50);
+}
+
+.titulo{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.text-descripcion{
+  font-size: 15px;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+
+/* SECCION FOOTER */
+
 .footer{
   background-color: black;
   display: flex;
@@ -74,7 +166,8 @@ html{
 
 .copy{
   color: white;
-  font-size: 18px;
+  text-transform: uppercase;
+  font-size: 15px;
   margin:10px;
 }
 
