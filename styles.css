@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;600&display=swap');
+
+/* BODY */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* SECCION ENCABEZADO */
+
+.inicio {
+  background: url("./assets/banner_portfolio.jpeg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.contenido-header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#nav ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 0 12px;
+  font-weight: 1000;
+  transition: 0.5s;
+}
+#nav ul li a:hover{
+  color: blueviolet;
+}
+
+.redes a{
+  margin: 0 10px;
+}
+.redes a:hover{
+  color: blueviolet;
+}
+
+.github, .linkedin{
+  font-size: 30px;
+}
+
+#icono-nav{
+  color: white;
+  display: none;
+}
+
+.presentacion{
+  max-width: 1100px;
+  height: 100vh;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bienvenida{
+  font-size: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.descripcion h1{
+  font-size: 75px;
+}
+
+.descripcion span{
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(173, 20, 50);
+}
+
+.tituloPresentacion{
+padding: 15px;
+}
+
+/* SECCION SOBRE MI */
+
+#sobremi{
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: black;
+  display: flex;
+}
+
+.contenedor-foto{
+  max-width: 500px;
+  margin-right: 65px;
+}
+
+.contenedor-foto img{
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(190, 190, 190);
+}
+
+.descripcion{
+  margin: 0 20px;
+}
+
+.titulo-seccion{
+  font-size: 30px;
+  text-decoration: underline 5px;
+  text-decoration-color: rgb(190, 190, 190);
+}
+
+.nombre-completo{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 25px 5px;
+  letter-spacing: 3px;
+}
+.nombre-completo span{
+  color: rgb(173, 20, 50);
+}
+
+.titulo{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.text-descripcion{
+  font-size: 15px;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+
+/* SECCION MIS EXPERIENCIAS */
+
+#experiencia{
+  padding: 100px 15px;
+  text-align: center;
+  background-color: rgb(233, 213, 252);
+}
+
+.card{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.card-img-top{
+  min-height: 200px;
+}
+
+.card:hover{
+  box-shadow: 5px 5px 10px grey, -5px -5px 10px rgb(184, 182, 182);
+}
+/* SECCION FOOTER */
+
+.footer{
+  background-color: black;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy{
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin:10px;
+}
+
