@@ -292,7 +292,21 @@ h3{
   padding: 10px;
 }
 
+/* SECCION PROYECTOS */
 
+#proyectos{
+  padding: 100px 15px;
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+#codigo, #demo{
+  margin: 35px;
+}
 
 /* SECCION FOOTER */
 
