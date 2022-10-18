@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Portfolio Gimena Di Stefano Nicolina</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
 <link rel="stylesheet" type="text/css" href="./styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="script.js"></script>
@@ -22,7 +22,7 @@
                 <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1662441043/APLogo-20-20.png" alt="logo Argentina Programa" width="120px" height="90px">
 
                 <!-- Menú -->
-                <nav id="nav" class="">
+                <nav id="nav" class="nav">
                     <ul id="links">
                         <li><a href="#inicio">INICIO</a></li>
                         <li><a href="#sobremi">SOBRE MI</a></li>
@@ -30,21 +30,22 @@
                         <li><a href="#educacion">EDUCACION</a></li>
                         <li><a href="#habilidades">HABILIDADES</a></li>
                         <li><a href="#proyectos">MIS PROYECTOS</a></li>
+                        <li><!-- Icono de las redes -->
+                            <div id="redes" class="redes">
+                                <a href="https://github.com/GimeDiStefanoN" target="_blank" class="github"><i class="fa-brands fa-square-github"></i></a>
+                                <a href="https://www.linkedin.com/in/gimena-di-stefano-nicolina/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="./login.html" class="btn btn-primary" role="button" aria-disabled="true">Iniciar Sesión</a>
+                            </div></li>
                     </ul>
                 </nav>
 
                 <!-- Icono del menú responsive -->
-                <div id="icono-nav">
+                <div id="icono-nav" onclick="responsiveMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 
 
-                <!-- Icono de las redes -->
-                <div class="redes">
-                    <a href="https://github.com/GimeDiStefanoN" target="_blank" class="github"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/gimena-di-stefano-nicolina/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="./login.html" class="btn btn-primary" role="button" aria-disabled="true">Iniciar Sesión</a>
-                </div>
+                
             </div>
         </header>
         <div class="presentacion">
@@ -163,8 +164,8 @@
             <p class="titulo-seccion">MIS HABILIDADES</p>
 
             <ul class="nav nav-pills nav-justified" id="listaHabilidades">
-                <li id="duras" class="nav-item">
-                    <a class="nav-link"  aria-current="page" href="#">HABILIDADES DURAS</a>
+                <li id="duras" class="nav-item" aria-haspopup="true">
+                    <a class="nav-link"  aria-current="page" href="#habilidades">HABILIDADES DURAS</a>
                 
                     <!-- HABILIDADES DURAS -->
                     <div class="contenedorDuras">
@@ -241,7 +242,7 @@
                 </li>
 
                 <li id="blandas" class="nav-item">
-                    <a class="nav-link"   href="#">HABILIDADES BLANDAS</a>
+                    <a class="nav-link"   href="#habilidades">HABILIDADES BLANDAS</a>
 
                     <!-- HABILIDADES BLANDAS -->
                     <div class="contenedorBlandas">
@@ -290,7 +291,7 @@
                 </li>
 
                 <li id="idiomas" class="nav-item">
-                    <a class="nav-link"  href="#">IDIOMAS</a>
+                    <a class="nav-link"  href="#habilidades">IDIOMAS</a>
 
                     <!-- IDIOMAS -->
                     <div class="contenedorIdiomas">
@@ -325,10 +326,10 @@
         <div class="contenedorProyectos">
             <p class="titulo-seccion">MIS PROYECTOS</p>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                   <div class="card">
-                    <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                    <img src="./assets/img portfolio.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">PORTFOLIO</h5>
                       <h6 class="fecha"> 2022</h6>

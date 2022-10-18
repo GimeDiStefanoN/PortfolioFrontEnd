@@ -17,6 +17,7 @@ html{
 .inicio {
   background: url("./assets/banner_portfolio.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
 }
@@ -79,28 +80,28 @@ html{
 }
 
 .bienvenida{
-  font-size: 30px;
+  font-size: 2vw;
   margin-bottom: 20px;
   letter-spacing: 5px;
 }
 
 .descripcion h1{
-  font-size: 75px;
+  font-size: 3vw;
 }
-
 .descripcion span{
-  font-size: 45px;
+  font-size: 4vw;
   font-weight: bold;
   color: rgb(228, 21, 62);
 }
 
 .tituloPresentacion{
-padding: 15px;
+padding: 2vw;
 }
 
 .frase{
-  font-size: 24px;
+  font-size: 2vw;
   font-family: cursive;
+  padding-right: 10vw;
 }
 
 /* SECCION LOGIN */
@@ -186,6 +187,7 @@ form .formulario{
   padding: 100px 15px;
   color: black;
   display: flex;
+  flex-direction: row;
 }
 
 .contenedor-foto{
@@ -211,7 +213,7 @@ form .formulario{
 }
 
 .nombre-completo{
-  font-size: 40px;
+  font-size: 3,5vw;
   font-weight: bold;
   margin: 25px 5px;
   letter-spacing: 3px;
@@ -221,7 +223,7 @@ form .formulario{
 }
 
 .titulo{
-  font-size: 20px;
+  font-size: 2,5vw;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -375,6 +377,8 @@ h3{
 #proyectos{
   padding: 100px 15px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 #proyectos .card{
@@ -410,3 +414,62 @@ h3{
   margin:10px;
 }
 
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1134px){
+ .footer{justify-content: center}
+
+  #nav ul{display: none;}
+
+  #icono-nav{
+    display: block;
+  }
+
+  #nav.responsive{
+    display: block;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    padding: 35px 0;
+    font-size: 16px;
+  }
+
+  #nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+ 
+  #nav.responsive ul li{
+    margin: 20px 0;
+  }
+
+  #sobremi{
+    padding: 50px 0;
+    display: block;
+    }
+
+    .contenedor-foto img{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20vw;
+    }
+    .titulo-seccion, .nombre-completo, .titulo{
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    #proyectos{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #proyectos .card{
+      justify-content: center;
+    }
+  }
+
+  @media(hover:hover){
+    #duras:hover .contenedorDuras, #blandas:hover .contenedorBlandas, #idiomas:hover .contenedorIdiomas { display:block }
+
+  }
