@@ -19,7 +19,7 @@
         <header>
             <div class="contenido-header">
                 <!-- logo-AP -->
-                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1662441043/APLogo-20-20.png" alt="logo Argentina Programa" width="120px" height="90px">
+                <img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" alt="logo Argentina Programa" width="120px" height="90px">
 
                 <!-- Menú -->
                 <nav id="nav" class="nav">
@@ -34,7 +34,12 @@
                             <div id="redes" class="redes">
                                 <a href="https://github.com/GimeDiStefanoN" target="_blank" class="github"><i class="fa-brands fa-square-github"></i></a>
                                 <a href="https://www.linkedin.com/in/gimena-di-stefano-nicolina/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="./login.html" class="btn btn-primary" role="button" aria-disabled="true">Iniciar Sesión</a>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    <i class="fa-solid fa-user-lock"></i>
+                                </button>
+                                <button type="button" class="btn btn-dark">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </button>
                             </div></li>
                     </ul>
                 </nav>
@@ -91,7 +96,7 @@
                 <img src="https://www.voicenter.com.ar/voicenterweb/wp-content/uploads/2016/06/logo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Asesor CX E-commerce</h5>
-                  <h6 class="fecha">Julio/2015 - Actualidad</h6>
+                  <h6 class="fecha">Julio/2015 - Noviembre/2022</h6>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -121,7 +126,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="title-educacion">
-                                <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank"><img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1662441043/APLogo-20-20.png" class="logo-educacion" alt="logo Argentina Programa" width="90px" height="60px" style="background-color: black;"></a>                             
+                                <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank"><img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" class="logo-educacion" alt="logo Argentina Programa" width="90px" height="60px" style="background-color: black;"></a>                             
                                 <h4>Web Full Stack Junior</h4>
                             </div>
                             <h7 class="fecha">Mayo/2022 - Actualidad</h7>
@@ -137,10 +142,10 @@
                         </li>
                         <li>
                             <div class="title-educacion">
-                                <a href="https://icaro.org.ar/" target="_blank"><img src="https://icaro.org.ar/assets/img/Logo.png" class="logo-educacion" alt="logo ICARO" width="90px" height="40px" style="background-color: blue;"></a>                             
+                                <a href="https://icaro.org.ar/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/icaro-project.appspot.com/o/logo.svg?alt=media&token=b47dccac-e962-48ab-99f1-f3d250f879f5" class="logo-educacion" alt="logo ICARO" width="90px" height="40px" style="background-color: blue;"></a>                             
                                 <h4>Diplomatura en Desarrollo Web Full Stack</h4>
                             </div>
-                            <h7 class="fecha">Diciembre/2021 - Agosto/2022</h7>
+                            <h7 class="fecha">Diciembre/2021 - Actualidad</h7>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
                         </li>
                         <li>
@@ -439,5 +444,47 @@
             <a href="https://www.linkedin.com/in/gimena-di-stefano-nicolina/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </section>
+
+    <!-- MODALES -->
+
+  <!-- MODAL LOGIN -->
+    <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">INICIAR SESION</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                
+                    <form method="post">
+                        <div class="formulario">
+                          <label for="inputUsername" class="col-form-label">Username</label>
+                          <div class="">
+                            <input type="text" class="form-control" id="autoSizingInputGroup" required>
+                          </div>
+                        </div>
+                        <div class="formulario">
+                          <label for="inputPassword3" class="col-form-label">Contraseña</label>
+                          <div class="">
+                            <input type="password" class="form-control" id="inputPassword3" required>
+                          </div>
+                        </div>
+              
+                        <div class="pass">
+                          ¿No recordás tu contraseña?
+                        </div>
+                        <button type="submit" id="btn-login" class="btn btn-primary">Iniciar Sesión</button>
+                      </form>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
 </body>
 </html>
