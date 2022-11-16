@@ -14,6 +14,7 @@
 <body>
 
   <!-- SECCION ENCABEZADO   -->
+
   <section id="inicio" class="inicio">
     <div class="contenido">
         <header>
@@ -47,12 +48,10 @@
                 <!-- Icono del menú responsive -->
                 <div id="icono-nav" onclick="responsiveMenu()">
                     <i class="fa-solid fa-bars"></i>
-                </div>
-                
-
-                
+                </div>                
             </div>
         </header>
+        
         <div class="presentacion">
             <p class="bienvenida">BIENVENIDOS</p>
             <h1 class="descripcion">Soy <span>Gimena Di Stefano Nicolina</span>,</h1>
@@ -62,7 +61,16 @@
     </div>
   </section>
 
+  <section id="editPresentacion" class="edit">
+    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editPresentacionModal"><i class="fa-solid fa-pencil"></i></button>
+  </section>
+ 
+
   <!-- SECCION ACERCA DE MI -->
+  <section id="editSobremi" class="edit">
+    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editSobreminModal"><i class="fa-solid fa-pencil"></i></button>
+  </section>
+
   <section id="sobremi">
         <div class="contenedor-foto">
             <img src="assets/foto-perfil-gdn.jpg" alt="foto de perfil">
@@ -76,6 +84,11 @@
   </section>
 
   <!-- SECCION EXPERIENCIA -->
+  <section id="editExperiencia" class="edit">
+    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#agregarExperienciaModal"><i class="fa-solid fa-plus"></i></button>
+    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editExperienciaModal"><i class="fa-solid fa-pencil"></i></button>
+  </section>
+
   <section id="experiencia">
     <div class="contenedor">
         <p class="titulo-seccion">MIS EXPERIENCIAS</p>
@@ -116,54 +129,64 @@
   </section>
 
     <!-- SECCION EDUCACION -->
-<section id="educacion">
-    <div class="contenedorEducacion">
-        <p class="titulo-seccion">MIS ESTUDIOS</p>
+    <section id="editEducacion" class="edit">
+        <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#agregarEducacionModal"><i class="fa-solid fa-plus"></i></button>
+        <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editEducacionModal"><i class="fa-solid fa-pencil"></i></button>
+    </section>
 
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="">
-                    <ul class="timeline">
-                        <li>
-                            <div class="title-educacion">
-                                <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank"><img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" class="logo-educacion" alt="logo Argentina Programa" width="90px" height="60px" style="background-color: black;"></a>                             
-                                <h4>Web Full Stack Junior</h4>
-                            </div>
-                            <h7 class="fecha">Mayo/2022 - Actualidad</h7>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
-                        </li>
-                        <li>
-                            <div class="title-educacion">
-                                <a href="https://www.ispc.edu.ar/" target="_blank"><img src="https://www.ispc.edu.ar/wp-content/uploads/2020/09/Isologotipo_ISPC_blanco-transparente-300x200.png" class="logo-educacion" alt="logo ISPC" width="90px" height="60px" style="background-color: rgb(13, 141, 180);"></a>                             
-                                <h4>Técnicatura Superior en Desarrollo Web y Aplicaciones Digitales</h4>
-                            </div>
-                            <h7 class="fecha">Abril/2022 - Actualidad</h7>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
-                        </li>
-                        <li>
-                            <div class="title-educacion">
-                                <a href="https://icaro.org.ar/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/icaro-project.appspot.com/o/logo.svg?alt=media&token=b47dccac-e962-48ab-99f1-f3d250f879f5" class="logo-educacion" alt="logo ICARO" width="90px" height="40px" style="background-color: blue;"></a>                             
-                                <h4>Diplomatura en Desarrollo Web Full Stack</h4>
-                            </div>
-                            <h7 class="fecha">Diciembre/2021 - Actualidad</h7>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
-                        </li>
-                        <li>
-                            <div class="title-educacion">
-                                <a href="https://21.edu.ar/" target="_blank"><img src="https://21.edu.ar/static/4bcbf88675cbe14ee0bca724f44902ff/e3771/logo-siglo.avif" class="logo-educacion" alt="logo S21" width="90px" height="40px" ></a>                             
-                                <h4>Contador Público</h4>
-                            </div>
-                            <h7 class="fecha">Julio/2017 - Abril/2021</h7>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
-                        </li>
-                    </ul>
+    <section id="educacion">
+        <div class="contenedorEducacion">
+            <p class="titulo-seccion">MIS ESTUDIOS</p>
+
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="">
+                        <ul class="timeline">
+                            <li>
+                                <div class="title-educacion">
+                                    <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank"><img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" class="logo-educacion" alt="logo Argentina Programa" width="90px" height="60px" style="background-color: black;"></a>                             
+                                    <h4>Web Full Stack Junior</h4>
+                                </div>
+                                <h7 class="fecha">Mayo/2022 - Actualidad</h7>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
+                            </li>
+                            <li>
+                                <div class="title-educacion">
+                                    <a href="https://www.ispc.edu.ar/" target="_blank"><img src="https://www.ispc.edu.ar/wp-content/uploads/2020/09/Isologotipo_ISPC_blanco-transparente-300x200.png" class="logo-educacion" alt="logo ISPC" width="90px" height="60px" style="background-color: rgb(13, 141, 180);"></a>                             
+                                    <h4>Técnicatura Superior en Desarrollo Web y Aplicaciones Digitales</h4>
+                                </div>
+                                <h7 class="fecha">Abril/2022 - Actualidad</h7>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
+                            </li>
+                            <li>
+                                <div class="title-educacion">
+                                    <a href="https://icaro.org.ar/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/icaro-project.appspot.com/o/logo.svg?alt=media&token=b47dccac-e962-48ab-99f1-f3d250f879f5" class="logo-educacion" alt="logo ICARO" width="90px" height="40px" style="background-color: blue;"></a>                             
+                                    <h4>Diplomatura en Desarrollo Web Full Stack</h4>
+                                </div>
+                                <h7 class="fecha">Diciembre/2021 - Actualidad</h7>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
+                            </li>
+                            <li>
+                                <div class="title-educacion">
+                                    <a href="https://21.edu.ar/" target="_blank"><img src="https://21.edu.ar/static/4bcbf88675cbe14ee0bca724f44902ff/e3771/logo-siglo.avif" class="logo-educacion" alt="logo S21" width="90px" height="40px" ></a>                             
+                                    <h4>Contador Público</h4>
+                                </div>
+                                <h7 class="fecha">Julio/2017 - Abril/2021</h7>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque....</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
   <!-- SECCION HABILIDADES -->
+    <section id="editHabilidades" class="edit">
+        <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#agregarHabilidadesModal"><i class="fa-solid fa-plus"></i></button>
+        <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editHabilidadesModal"><i class="fa-solid fa-pencil"></i></button>
+    </section>
+
     <section id="habilidades">
         <div class="contenedorHabilidades">
             <p class="titulo-seccion">MIS HABILIDADES</p>
@@ -327,112 +350,117 @@
     </section>
 
   <!-- SECCION PROYECTOS -->
-    <section id="proyectos">
-        <div class="contenedorProyectos">
-            <p class="titulo-seccion">MIS PROYECTOS</p>
+    <section id="editProyectos" class="edit">
+        <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#agregarProyectosModal"><i class="fa-solid fa-plus"></i></button>
+        <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editProyectosModal"><i class="fa-solid fa-pencil"></i></button>
+    </section>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img src="./assets/img portfolio.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">PORTFOLIO</h5>
-                      <h6 class="fecha"> 2022</h6>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="buttons">
-                            <a href="https://github.com/GimeDiStefanoN/PortfolioFrontEnd" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
-                            <a href="https://portfoliobasic.vercel.app/" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+    <section id="proyectos">
+            <div class="contenedorProyectos">
+                <p class="titulo-seccion">MIS PROYECTOS</p>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                    <div class="card">
+                        <img src="./assets/img portfolio.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">PORTFOLIO</h5>
+                        <h6 class="fecha"> 2022</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="buttons">
+                                <a href="https://github.com/GimeDiStefanoN/PortfolioFrontEnd" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                                <a href="https://portfoliobasic.vercel.app/" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">CALCULADORA</h5>
-                      <h6 class="fecha">2022</h6>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="buttons">
-                        <a href="https://github.com/GimeDiStefanoN/CalculadoraDesafio" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
-                        <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">FORMULARIO LOGIN</h5>
-                      <h6 class="fecha"> 2022</h6>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                      <div class="buttons">
-                        <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
-                        <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">CRUD</h5>
-                      <h6 class="fecha"> 2022</h6>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="buttons">
-                        <a href="https://github.com/GimeDiStefanoN/tasksapp" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
-                        <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">ECOMMERCE</h5>
-                      <h6 class="fecha"> 2022</h6>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="buttons">
-                        <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
-                        <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">CLONE WEB</h5>
-                      <h6 class="fecha"> 2022</h6>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="buttons">
-                        <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
-                        <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
+                    <div class="col">
                     <div class="card">
-                      <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">API</h5>
+                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">CALCULADORA</h5>
+                        <h6 class="fecha">2022</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/GimeDiStefanoN/CalculadoraDesafio" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                            <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">FORMULARIO LOGIN</h5>
+                        <h6 class="fecha"> 2022</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="buttons">
+                            <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                            <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">CRUD</h5>
+                        <h6 class="fecha"> 2022</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/GimeDiStefanoN/tasksapp" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                            <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">ECOMMERCE</h5>
                         <h6 class="fecha"> 2022</h6>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <div class="buttons">
                             <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
                             <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
-                      </div>
-                      </div>
+                        </div>
+                        </div>
                     </div>
-                  </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">CLONE WEB</h5>
+                        <h6 class="fecha"> 2022</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="buttons">
+                            <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                            <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">API</h5>
+                            <h6 class="fecha"> 2022</h6>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="buttons">
+                                <a href="" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                                <a href="" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
   <!-- SECCION FOOTER -->
     <section class="footer">
@@ -485,6 +513,365 @@
             </div>
             </div>
         </div>
+    
+        <!-- MODAL EDIT PRESENTACION -->
 
+            <div class="modal fade" id="editPresentacionModal" tabindex="-1" aria-labelledby="editPresentacionModal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Editar imagen Banner:</label>
+                          <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                        </div>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Editar Nombre completo:</label>
+                          <input type="text" class="form-control" id="recipient-name" placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Editar Puesto:</label>
+                          <input type="text" class="form-control" id="recipient-name" placeholder="Puesto laboral">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Editar Frase:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">GUARDAR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        <!-- MODAL EDIT SOBRE MI -->
+        <div class="modal fade" id="editSobreminModal" tabindex="-1" aria-labelledby="editSobreminModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Editar imagen Perfil:</label>
+                      <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Editar Nombre completo:</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Nombre y Apellido">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Editar Puesto:</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Puesto laboral">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Editar descripcion:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">GUARDAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- MODAL EDIT EXPERIENCIA -->
+          <!-- MODAL AGREGAR -->
+          <div class="modal fade" id="agregarExperienciaModal" tabindex="-1" aria-labelledby="agregarExperienciaModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Imagen Empresa:</label>
+                      <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Puesto laboral:</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Puesto laboral">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Fecha Inicio:</label>
+                      <input type="date" class="form-control" id="recipient-date">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Fecha Finalizacion:</label>
+                      <input type="date" class="form-control" id="recipient-date">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Descripcion:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">AGREGAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL EDITAR --> 
+            <div class="modal fade" id="editExperienciaModal" tabindex="-1" aria-labelledby="editExperienciaModal" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar imagen Empresa:</label>
+                        <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar Puesto laboral:</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Puesto laboral">
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar Fecha Inicio:</label>
+                        <input type="date" class="form-control" id="recipient-date">
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar Fecha Finalizacion:</label>
+                        <input type="date" class="form-control" id="recipient-date">
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Editar descripcion:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GUARDAR</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        <!-- MODAL EDIT EDUCACION -->
+
+            <!-- MODAL AGREGAR -->
+                <div class="modal fade" id="agregarEducacionModal" tabindex="-1" aria-labelledby="agregarEducacionModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Imagen Institución:</label>
+                            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Titulo:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Fecha Inicio:</label>
+                            <input type="date" class="form-control" id="recipient-date">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Fecha Finalizacion:</label>
+                            <input type="date" class="form-control" id="recipient-date">
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripcion:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">AGREGAR</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <!-- MODAL EDITAR --> 
+                <div class="modal fade" id="editEducacionModal" tabindex="-1" aria-labelledby="editEducacionModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar imagen Institución:</label>
+                            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar Titulo:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Puesto laboral">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar Fecha Inicio:</label>
+                            <input type="date" class="form-control" id="recipient-date">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar Fecha Finalizacion:</label>
+                            <input type="date" class="form-control" id="recipient-date">
+                            </div>
+                            <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Editar descripcion:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">GUARDAR</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        <!-- MODAL EDIT HABILIDADES -->
+
+            <!-- MODAL AGREGAR -->
+                <div class="modal fade" id="agregarHabilidadesModal" tabindex="-1" aria-labelledby="agregarHabilidadesModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Habilidad:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Porcentaje de conocimiento:</label>
+                            <input type="number" class="form-control" id="recipient-number">
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">AGREGAR</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <!-- MODAL EDITAR --> 
+                <div class="modal fade" id="editHabilidadesModal" tabindex="-1" aria-labelledby="editHabilidadesModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar habilidad:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar porcentaje de conocimiento:</label>
+                            <input type="number" class="form-control" id="recipient-number">
+                            </div>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">GUARDAR</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        <!-- MODAL EDIT PROYECTOS -->
+        
+            <!-- MODAL AGREGAR -->
+            <div class="modal fade" id="agregarProyectosModal" tabindex="-1" aria-labelledby="agregarProyectosModal" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Imagen Poyecto:</label>
+                        <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre del proyecto:</label>
+                        <input type="text" class="form-control" id="recipient-name" >
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Fecha de realización:</label>
+                        <input type="date" class="form-control" id="recipient-date">
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Descripción:</label>
+                        <textarea class="form-control" id="message-text" placeholder="Ejemplo: Herramientas utilizadas, funcionalidad"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Link Codigo:</label>
+                            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá link del codigo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Link Demo:</label>
+                            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá link del Demo">
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">AGREGAR</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- MODAL EDITAR --> 
+            <div class="modal fade" id="editProyectosModal" tabindex="-1" aria-labelledby="editProyectosModal" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar imagen Poyecto:</label>
+                        <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar Nombre del proyecto:</label>
+                        <input type="text" class="form-control" id="recipient-name" >
+                        </div>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Editar Fecha:</label>
+                        <input type="date" class="form-control" id="recipient-date">
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Editar descripcion:</label>
+                        <textarea class="form-control" id="message-text" placeholder="Ejemplo: Herramientas utilizadas, funcionalidad"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar Link Codigo:</label>
+                            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá link del codigo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Editar Link Demo:</label>
+                            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá link del Demo">
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GUARDAR</button>
+                    </div>
+                </div>
+                </div>
+            </div>
 </body>
 </html>

@@ -8,12 +8,3 @@ function responsiveMenu(){
         x.className = "";
     }
 }
-
-// function responsiveMenu(){
-//     var x =document.getElementById("redes");
-//     if (x.className===""){
-//         x.className = "responsive";
-//     }else{
-//         x.className = "";
-//     }
-// }
