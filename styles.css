@@ -12,65 +12,57 @@ html{
   scroll-behavior: smooth;
 }
 
-/* SECCION ENCABEZADO */
-
-.inicio {
-  background: url("./assets/banner_portfolio.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  z-index: -1;
-}
-
-.contenido-header{
-  background-color: black;
+/* NAVEGACION */
+#navegacion{
   position: fixed;
   width: 100%;
-  z-index: 100;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  z-index: 6666;
 }
-
-#nav ul{
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-#nav ul li a{
+#menu ul li a{
   text-decoration: none;
   color: white;
   margin: 0 12px;
-  font-weight: 1000;
   transition: 0.5s;
 }
-#nav ul li a:hover{
+#menu ul li a:hover{
   color: blueviolet;
 }
 
-.redes a{
+#redes a{
+  color: white;
+  font-size: 30px;
   margin: 0 10px;
 }
-.redes a:hover{
+#redes ul li a:hover{
   color: blueviolet;
 }
 
-.github, .linkedin, .login{
+#sesion button{
+  color: white;
   font-size: 30px;
 }
 
-#icono-nav{
-  color: white;
-  display: none;
+#sesion button:hover{
+  color: blueviolet;
+}
+
+/* SECCION ENCABEZADO */
+
+.banner {
+  background-image: url(./assets/banner_portfolio.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
 }
 
 .presentacion{
-  max-width: 1100px;
+  max-width: 1100rem;
   height: 100vh;
   color: white;
   margin: auto;
@@ -87,7 +79,7 @@ html{
 }
 
 .descripcion h1{
-  font-size: 3vw;
+  font-size: 3rem;
 }
 .descripcion span{
   font-size: 4vw;
@@ -97,6 +89,8 @@ html{
 
 .tituloPresentacion{
 padding: 2vw;
+font-size: 3vw;
+
 }
 
 .frase{
@@ -386,6 +380,13 @@ h3{
   margin:10px;
 }
 
+.redes a{
+  margin: 0 10px;
+  color: white;
+}
+.redes a:hover{
+  color: blueviolet;
+} 
 
 /*SECCION EDICION*/
 .edit{
@@ -404,8 +405,7 @@ background-color: transparent;
 }
 #editPresentacion{
   background-color: transparent;
-  background-color: rgb(73, 53, 92);
-
+  z-index: auto;
 }
 
 #editExperiencia{
@@ -451,6 +451,7 @@ background-color: transparent;
     margin: 20px 0;
   }
 
+  
   #sobremi{
     padding: 50px 0;
     display: block;
