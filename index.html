@@ -10,60 +10,98 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
 
   <!-- SECCION ENCABEZADO   -->
 
   <section id="inicio" class="inicio">
-    <div class="contenido">
-        <header>
-            <div class="contenido-header">
-                <!-- logo-AP -->
-                <img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" alt="logo Argentina Programa" width="120px" height="90px">
+            <!-- HEADER - NAVBAR -->
+        <header id="navegacion">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" alt="logo Argentina Programa" width="120px" height="90px">
 
-                <!-- Menú -->
-                <nav id="nav" class="nav">
-                    <ul id="links">
-                        <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="#sobremi">SOBRE MI</a></li>
-                        <li><a href="#experiencia">EXPERIENCIA</a></li>
-                        <li><a href="#educacion">EDUCACION</a></li>
-                        <li><a href="#habilidades">HABILIDADES</a></li>
-                        <li><a href="#proyectos">MIS PROYECTOS</a></li>
-                        <li><!-- Icono de las redes -->
-                            <div id="redes" class="redes">
-                                <a href="https://github.com/GimeDiStefanoN" target="_blank" class="github"><i class="fa-brands fa-square-github"></i></a>
-                                <a href="https://www.linkedin.com/in/gimena-di-stefano-nicolina/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- ICONO MENU -->
+                    <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="navbar-item">
+                                <a href="#inicio" class="nav-link active">INICIO</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#sobremi" class="nav-link">SOBRE MI</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#experiencia" class="nav-link">EXPERIENCIA</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#educacion" class="nav-link">EDUCACION</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#habilidades" class="nav-link">HABILIDADES</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#proyectos" class="nav-link">MIS PROYECTOS</a>
+                            </li>
+                        </ul>
+                        <!--LINEA DIVISORIA -->
+                        <hr class="text-white-50">
+
+                        <!-- ENLACES A REDES SOCIALES -->
+                        <ul class="navbar-nav flex-row flex-wrap" id="redes">
+                            <li class="navbar-item col-6 col-md-auto p-3">
+                            <a href="https://github.com/GimeDiStefanoN" target="_blank" rel="github"><i class="bi bi-github"></i></a> 
+                            <small class="d-lg-none ms-2">GitHub</small>
+                            </li>
+                            <li class="navbar-item col-6 col-md-auto p-3">
+                                <a href="https://www.linkedin.com/in/gimena-di-stefano-nicolina/" target="_blank" rel="linkedin"><i class="bi bi-linkedin"></i></a> 
+                                <small class="d-lg-none ms-2">Linkedin</small>
+                            </li>
+                        </ul>
+
+                        <!-- BOTON INICIO DE SESION -->
+                        <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
+                            <li class="navbar-item col-6 col-md-auto p-3">
                                 <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                    <i class="fa-solid fa-user-lock"></i>
+                                    <i class="bi bi-person-fill-lock"></i>
                                 </button>
+                                <small class="d-md-none ms-2">Iniciar Sesión</small>
+                            </li>
+                            <li class="navbar-item col-6 col-md-auto p-3">
                                 <button type="button" class="btn btn-dark">
-                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <i class="bi bi-box-arrow-in-right"></i>
                                 </button>
-                            </div></li>
-                    </ul>
-                </nav>
-
-                <!-- Icono del menú responsive -->
-                <div id="icono-nav" onclick="responsiveMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>                
-            </div>
+                                <small class="d-md-none ms-2">Cerrar Sesión</small>
+                            </li>
+                            
+                            
+                        </ul>
+                </div>
+            </nav>
         </header>
-        
-        <div class="presentacion">
-            <p class="bienvenida">BIENVENIDOS</p>
-            <h1 class="descripcion">Soy <span>Gimena Di Stefano Nicolina</span>,</h1>
-            <h2 class="tituloPresentacion"> FULL STACK DEVELOPER JR.</h2>
-            <p class="frase">"Si se puede imaginar, se puede programar"</p>
-        </div>
-    </div>
   </section>
 
+   <!-- SECCION BANNER -->
+
+  <section id="banner" class="banner">
+    <div class="presentacion">
+        <p class="bienvenida">BIENVENIDOS</p>
+        <h1 class="descripcion">Soy <span>Gimena Di Stefano Nicolina</span>,</h1>
+        <h2 class="tituloPresentacion"> FULL STACK DEVELOPER JR.</h2>
+        <p class="frase">"Si se puede imaginar, se puede programar"</p>
+    </div>
+  </section>
   <section id="editPresentacion" class="edit">
     <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editPresentacionModal"><i class="fa-solid fa-pencil"></i></button>
   </section>
+  
  
 
   <!-- SECCION ACERCA DE MI -->
@@ -362,7 +400,7 @@
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                     <div class="card">
-                        <img src="./assets/img portfolio.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/portfolio.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">PORTFOLIO</h5>
                         <h6 class="fecha"> 2022</h6>
@@ -376,10 +414,24 @@
                     </div>
                     <div class="col">
                     <div class="card">
-                        <img src="https://media.istockphoto.com/vectors/responsive-website-design-with-desktop-computer-screen-and-tablet-pc-vector-id1178945942?k=20&m=1178945942&s=170667a&w=0&h=dI1aE7490JP_e8YaS7QjPojdlg-euRq48Q7vFLiL69A=" class="card-img-top" alt="...">
+                        <img src="./assets/navbar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">NAVBAR</h5>
+                        <h6 class="fecha">2022</h6>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/GimeDiStefanoN/NavBar" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
+                            <a href="https://" target="_blank" ><button id="demo" class="btn btn-secondary">Demo</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="./assets/calculadora.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">CALCULADORA</h5>
-                        <h6 class="fecha">2022</h6>
+                        <h6 class="fecha">2021</h6>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <div class="buttons">
                             <a href="https://github.com/GimeDiStefanoN/CalculadoraDesafio" target="_blank" ><button id="codigo" class="btn btn-secondary">Código</button></a>
@@ -478,7 +530,7 @@
   <!-- MODAL LOGIN -->
     <!-- Modal -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                 <h1 class="modal-title fs-5" id="loginModalLabel">INICIAR SESION</h1>
@@ -505,10 +557,6 @@
                         </div>
                         <button type="submit" id="btn-login" class="btn btn-primary">Iniciar Sesión</button>
                       </form>
-
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
             </div>
@@ -517,7 +565,7 @@
         <!-- MODAL EDIT PRESENTACION -->
 
             <div class="modal fade" id="editPresentacionModal" tabindex="-1" aria-labelledby="editPresentacionModal" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -551,7 +599,7 @@
 
         <!-- MODAL EDIT SOBRE MI -->
         <div class="modal fade" id="editSobreminModal" tabindex="-1" aria-labelledby="editSobreminModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -586,7 +634,7 @@
         <!-- MODAL EDIT EXPERIENCIA -->
           <!-- MODAL AGREGAR -->
           <div class="modal fade" id="agregarExperienciaModal" tabindex="-1" aria-labelledby="agregarExperienciaModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -623,7 +671,7 @@
           </div>
           <!-- MODAL EDITAR --> 
             <div class="modal fade" id="editExperienciaModal" tabindex="-1" aria-labelledby="editExperienciaModal" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -663,7 +711,7 @@
 
             <!-- MODAL AGREGAR -->
                 <div class="modal fade" id="agregarEducacionModal" tabindex="-1" aria-labelledby="agregarEducacionModal" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -700,7 +748,7 @@
                 </div>
             <!-- MODAL EDITAR --> 
                 <div class="modal fade" id="editEducacionModal" tabindex="-1" aria-labelledby="editEducacionModal" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -740,7 +788,7 @@
 
             <!-- MODAL AGREGAR -->
                 <div class="modal fade" id="agregarHabilidadesModal" tabindex="-1" aria-labelledby="agregarHabilidadesModal" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -765,7 +813,7 @@
                 </div>
             <!-- MODAL EDITAR --> 
                 <div class="modal fade" id="editHabilidadesModal" tabindex="-1" aria-labelledby="editHabilidadesModal" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -793,7 +841,7 @@
         
             <!-- MODAL AGREGAR -->
             <div class="modal fade" id="agregarProyectosModal" tabindex="-1" aria-labelledby="agregarProyectosModal" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -834,7 +882,7 @@
             </div>
             <!-- MODAL EDITAR --> 
             <div class="modal fade" id="editProyectosModal" tabindex="-1" aria-labelledby="editProyectosModal" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
