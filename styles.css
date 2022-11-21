@@ -155,6 +155,10 @@ form .formulario{
   display: flex;
   flex-direction: row;
 }
+#sobremi div{
+  width: 50%;
+  padding: 10px;
+}
 
 .contenedor-foto{
   max-width: 500px;
@@ -179,13 +183,18 @@ form .formulario{
 }
 
 .nombre-completo{
-  font-size: 3,5vw;
+  font-size: 2.3em;
   font-weight: bold;
   margin: 25px 5px;
   letter-spacing: 3px;
+
 }
 .nombre-completo span{
   color: rgb(243, 8, 51);
+  font-size: 1.5em;
+  width: 100vw;
+
+
 }
 
 .titulo{
@@ -365,26 +374,18 @@ h3{
 
 /* SECCION FOOTER */
 
-.footer{
-  background-color: black;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.copy{
+#copy{
   color: white;
   text-transform: uppercase;
   font-size: 15px;
-  margin:10px;
+  margin:5px;
 }
 
-.redes a{
+#redes a{
   margin: 0 10px;
   color: white;
 }
-.redes a:hover{
+#redes a:hover{
   color: blueviolet;
 } 
 
@@ -462,6 +463,10 @@ background-color: transparent;
       flex-direction: column;
       margin-left: 20vw;
     }
+
+    .descripcion{
+      margin-left: 20vw;
+    }
     .titulo-seccion, .nombre-completo, .titulo{
       text-align: center;
       margin-top: 10px;
@@ -474,6 +479,10 @@ background-color: transparent;
 
     #proyectos .card{
       justify-content: center;
+    }
+
+    #copy{
+      text-align: center;
     }
   }
 
