@@ -73,28 +73,28 @@ html{
 }
 
 .bienvenida{
-  font-size: 2vw;
+  font-size: 1em;
   margin-bottom: 20px;
   letter-spacing: 5px;
 }
 
 .descripcion h1{
-  font-size: 3rem;
+  font-size: 0.7em;
 }
 .descripcion span{
-  font-size: 4vw;
+  font-size: 1.6em;
   font-weight: bold;
   color: rgb(228, 21, 62);
 }
 
 .tituloPresentacion{
 padding: 2vw;
-font-size: 3vw;
+font-size: 1.5em;
 
 }
 
 .frase{
-  font-size: 2vw;
+  font-size: 1.1em;
   font-family: cursive;
   padding-right: 10vw;
 }
@@ -154,9 +154,10 @@ form .formulario{
   color: black;
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 #sobremi div{
-  width: 50%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -172,9 +173,8 @@ form .formulario{
   background-color: rgb(190, 190, 190);
 }
 
-.descripcion{
-  margin: 0 20px;
-}
+.descripcion2{
+text-align: center;}
 
 .titulo-seccion{
   font-size: 30px;
@@ -183,7 +183,7 @@ form .formulario{
 }
 
 .nombre-completo{
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: bold;
   margin: 25px 5px;
   letter-spacing: 3px;
@@ -191,14 +191,14 @@ form .formulario{
 }
 .nombre-completo span{
   color: rgb(243, 8, 51);
-  font-size: 1.5em;
+  font-size: 1em;
   width: 100vw;
 
 
 }
 
 .titulo{
-  font-size: 2,5vw;
+  font-size: 1.1em;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -206,7 +206,7 @@ form .formulario{
 }
 
 .text-descripcion{
-  font-size: 15px;
+  font-size: 1em;
   line-height: 35px;
   margin-bottom: 12px;
 }
@@ -374,11 +374,14 @@ h3{
 
 /* SECCION FOOTER */
 
+.footer{
+  width: 100%;
+}
 #copy{
   color: white;
   text-transform: uppercase;
   font-size: 15px;
-  margin:5px;
+  /* margin:5px; */
 }
 
 #redes a{
@@ -387,7 +390,7 @@ h3{
 }
 #redes a:hover{
   color: blueviolet;
-} 
+}
 
 /*SECCION EDICION*/
 .edit{
@@ -424,7 +427,6 @@ background-color: transparent;
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width:1134px){
- .footer{justify-content: center}
 
   #nav ul{display: none;}
 
@@ -432,6 +434,9 @@ background-color: transparent;
     display: block;
   }
 
+  #buttonresponsive{
+    margin-right: 40px;
+  }
   #nav.responsive{
     display: block;
     background-color: black;
@@ -440,22 +445,25 @@ background-color: transparent;
     top: 75px;
     left: 0;
     padding: 35px 0;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   #nav.responsive ul{
     display: block !important;
     text-align: center;
   }
- 
+
   #nav.responsive ul li{
-    margin: 20px 0;
+    margin: 20px 10px;
   }
 
-  
+  #redes ul li{
+    padding-right: 20px;  }
+
   #sobremi{
     padding: 50px 0;
     display: block;
+    text-align: center;
     }
 
     .contenedor-foto img{
@@ -466,6 +474,7 @@ background-color: transparent;
 
     .descripcion{
       margin-left: 20vw;
+      font-size: 2.5em;
     }
     .titulo-seccion, .nombre-completo, .titulo{
       text-align: center;
@@ -480,6 +489,9 @@ background-color: transparent;
     #proyectos .card{
       justify-content: center;
     }
+    .footer{
+      justify-content: center;
+      width: 100%;}
 
     #copy{
       text-align: center;
