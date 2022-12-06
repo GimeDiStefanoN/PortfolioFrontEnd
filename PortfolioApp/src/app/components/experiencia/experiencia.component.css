@@ -1,0 +1,41 @@
+/* SECCION MIS EXPERIENCIAS */
+
+#experiencia{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: rgb(233, 213, 252);
+  }
+
+  .titulo-seccion{
+    font-size: 30px;
+    text-decoration: underline 5px;
+    text-decoration-color: rgb(190, 190, 190);
+  }
+  
+  .card{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 18px;
+  }
+  
+  .card-title{
+    font-size: 24px;
+    padding-top: 30px;
+  }
+  .card-img-top{
+    min-height: 200px;
+  }
+  
+  .fecha{
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .card:hover{
+    box-shadow: 5px 5px 10px grey, -5px -5px 10px rgb(184, 182, 182);
+  }
+  

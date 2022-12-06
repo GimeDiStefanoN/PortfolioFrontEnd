@@ -52,20 +52,8 @@
 
                 <!-- BOTON INICIO DE SESION -->
                 <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
-                    <li class="navbar-item col-6 col-md-auto p-3">
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            <i class="bi bi-person-fill-lock"></i>
-                        </button>
-                        <small class="d-md-none ms-2">Iniciar Sesión</small>
-                    </li>
-                    <li class="navbar-item col-6 col-md-auto p-3">
-                        <button type="button" class="btn btn-dark">
-                            <i class="bi bi-box-arrow-in-right"></i>
-                        </button>
-                        <small class="d-md-none ms-2">Cerrar Sesión</small>
-                    </li>
-                    
-                    
+                    <app-login></app-login>
+                    <app-logout></app-logout>   
                 </ul>
             </div>
         </div>
