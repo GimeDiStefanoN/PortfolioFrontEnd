@@ -58,6 +58,26 @@
   
   .fecha{
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     font-weight: bold;
   }
+
+  /*SECCION EDICION*/
+.edit{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit i{
+  margin: 5px 12px;
+  font-size: 25px;
+}
+
+.buttonedit, .buttonborrar{
+border: none;
+background-color: transparent;
+}
+
+#editEducacion{
+  background-color: rgb(240, 236, 236);
+}

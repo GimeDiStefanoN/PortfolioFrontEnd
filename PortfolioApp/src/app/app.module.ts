@@ -18,10 +18,14 @@ import { LoginComponent } from './components/login/login.component';
 import { ModalLoginComponent } from './modales/modal-login/modal-login.component';
 import { ModalBannerComponent } from './modales/modal-banner/modal-banner.component';
 import { ModalSobremiComponent } from './modales/modal-sobremi/modal-sobremi.component';
-import { ModalEducacionComponent } from './modales/modal-educacion/modal-educacion.component';
-import { ModalExperienciaComponent } from './modales/modal-experiencia/modal-experiencia.component';
-import { ModalHabilidadesComponent } from './modales/modal-habilidades/modal-habilidades.component';
-import { ModalProyectosComponent } from './modales/modal-proyectos/modal-proyectos.component';
+import { ModalEditEducacionComponent } from './modales/modales-educacion/modal-edit-educacion/modal-edit-educacion.component';
+import { ModalAddEducacionComponent } from './modales/modales-educacion/modal-add-educacion/modal-add-educacion.component';
+import { ModalEditExperienciaComponent } from './modales/modales-experiencias/modal-edit-experiencia/modal-edit-experiencia.component';
+import { ModalAddExperienciaComponent } from './modales/modales-experiencias/modal-add-experiencia/modal-add-experiencia.component';
+import { ModalEditHabilidadesComponent } from './modales/modales-habilidades/modal-edit-habilidades/modal-edit-habilidades.component';
+import { ModalAddHabilidadesComponent } from './modales/modales-habilidades/modal-add-habilidades/modal-add-habilidades.component';
+import { ModalEditProyectosComponent } from './modales/modales-proyectos/modal-edit-proyectos/modal-edit-proyectos.component';
+import { ModalAddProyectosComponent } from './modales/modales-proyectos/modal-add-proyectos/modal-add-proyectos.component';
 
 @NgModule({
   declarations: [
@@ -41,10 +45,14 @@ import { ModalProyectosComponent } from './modales/modal-proyectos/modal-proyect
     ModalLoginComponent,
     ModalBannerComponent,
     ModalSobremiComponent,
-    ModalEducacionComponent,
-    ModalExperienciaComponent,
-    ModalHabilidadesComponent,
-    ModalProyectosComponent
+    ModalEditEducacionComponent,
+    ModalAddEducacionComponent,
+    ModalEditExperienciaComponent,
+    ModalAddExperienciaComponent,
+    ModalEditHabilidadesComponent,
+    ModalAddHabilidadesComponent,
+    ModalEditProyectosComponent,
+    ModalAddProyectosComponent
   ],
   imports: [
     BrowserModule,

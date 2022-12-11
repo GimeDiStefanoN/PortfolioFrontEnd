@@ -48,3 +48,24 @@
     font-family: cursive;
     padding-right: 10vw;
   }
+
+  /*SECCION EDICION*/
+.edit{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit i{
+  margin: 5px 12px;
+  font-size: 25px;
+}
+
+.buttonedit{
+border: none;
+background-color: transparent;
+}
+
+#editPresentacion{
+  background-color: transparent;
+  z-index: auto;
+}

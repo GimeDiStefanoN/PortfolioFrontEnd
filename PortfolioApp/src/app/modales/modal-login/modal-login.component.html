@@ -1,1 +1,33 @@
-<p>modal-login works!</p>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">INICIAR SESION</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        
+            <form method="post">
+                <div class="formulario">
+                  <label for="inputUsername" class="col-form-label">Username</label>
+                  <div class="">
+                    <input type="text" class="form-control" id="autoSizingInputGroup" required>
+                  </div>
+                </div>
+                <div class="formulario">
+                  <label for="inputPassword3" class="col-form-label">Contraseña</label>
+                  <div class="">
+                    <input type="password" class="form-control" id="inputPassword3" required>
+                  </div>
+                </div>
+      
+                <div class="pass">
+                  ¿No recordás tu contraseña?
+                </div>
+                <button type="submit" id="btn-login" class="btn btn-primary">Iniciar Sesión</button>
+              </form>
+        </div>
+    </div>
+    </div>
+</div>
