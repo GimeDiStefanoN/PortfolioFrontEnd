@@ -2,7 +2,7 @@
 
 #footer{
     width: 100%;
-    position: fixed; /*con esto fijo el footer al fondo de la pagina*/
+    position: sticky; /*con esto fijo el footer al fondo de la pagina*/
     bottom: 0;      /*con esto fijo el footer al fondo de la pagina*/
   }
 

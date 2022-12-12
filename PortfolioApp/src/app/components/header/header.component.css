@@ -2,7 +2,11 @@
 #navegacion{
     position: fixed;
     width: 100%;
-    z-index: 6666;
+    z-index: 999;
+  }
+
+  #encabezado{
+    height: 90px;
   }
   #menu ul li a{
     text-decoration: none;
