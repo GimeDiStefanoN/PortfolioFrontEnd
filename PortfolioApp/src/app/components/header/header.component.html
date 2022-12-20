@@ -52,8 +52,8 @@
 
                 <!-- BOTON INICIO DE SESION -->
                 <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
-                    <app-login></app-login>
-                    <app-logout></app-logout>   
+                    <app-login *ngIf="!mostrar"></app-login>
+                    <app-logout *ngIf="mostrar"></app-logout>   
                 </ul>
             </div>
         </div>
