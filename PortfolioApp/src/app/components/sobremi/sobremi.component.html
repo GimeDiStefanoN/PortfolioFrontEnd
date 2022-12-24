@@ -3,17 +3,18 @@
     <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editSobreminModal"><i class="fa-solid fa-pencil"></i></button>
   </section>
  
-  <section id="sobremi">
+  <div><section id="sobremi" >
     <div class="contenedor-foto">
-        <img src="assets/img/foto-perfil-gdn.jpg" alt="foto de perfil">
+        <img [src]="miPortfolio.fotoperfil" alt="foto de perfil">
     </div>
     <div class="descripcion2">
         <p class="titulo-seccion">SOBRE MI</p>
-        <h2 class="nombre-completo">¡Hola! Soy, <span>Gimena Di Stefano Nicolina</span></h2>
-        <h3 class="titulo">Full Stack Developer Jr.</h3>
-        <p class="text-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam optio itaque explicabo minus quia tempore</p>
+        <h2 class="nombre-completo">¡Hola! Soy, <span>{{miPortfolio.nombre}} {{miPortfolio.apellido}}</span></h2>
+        <h3 class="titulo">{{miPortfolio.puesto}}</h3>
+        <p class="text-descripcion">{{miPortfolio.descripcionsobremi}}</p>
     </div>
 </section>
+</div>
 
 <!-- aca va el modal del login -->
 <app-modal-sobremi></app-modal-sobremi>

@@ -9,13 +9,14 @@
         <p class="titulo-seccion">MIS EXPERIENCIAS</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
+            <div class="col" *ngFor="let experiencia of experienciaList"
+            >
               <div class="card">
-                <img src="https://www.tailorbrands.com/wp-content/uploads/2021/12/typography-section.jpg" class="card-img-top" alt="...">
+                <img [src]="experiencia.logoEmpresa" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Desarrollador Web</h5>
-                  <h6 class="fecha">Desde Año 2022</h6>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">{{experiencia.puesto}}</h5>
+                  <h6 class="fecha">{{experiencia.inicio}} - {{experiencia.fin}}</h6>
+                  <p class="card-text">{{experiencia.descripcion}}</p>
                 
                   <div  class="edit">
                     <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editExperienciaModal"><i class="fa-solid fa-pencil"></i></button>
@@ -24,37 +25,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://www.voicenter.com.ar/voicenterweb/wp-content/uploads/2016/06/logo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Asesor CX E-commerce</h5>
-                  <h6 class="fecha">Julio/2015 - Noviembre/2022</h6>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                
-                  <div  class="edit">
-                    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editExperienciaModal"><i class="fa-solid fa-pencil"></i></button>
-                    <button class="buttonborrar" type="button" data-bs-toggle="modal" data-bs-target="#borrarExperienciaModal"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="https://apexamerica.com/wp-content/themes/Apex/logo-apex-light.svg" style="background-color: green;" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Ejecutivo de cuentas</h5>
-                  <h6 class="fecha">Febrero 2013 - Diciembre 2013</h6>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                
-                  <div  class="edit">
-                    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editExperienciaModal"><i class="fa-solid fa-pencil"></i></button>
-                    <button class="buttonborrar" type="button" data-bs-toggle="modal" data-bs-target="#borrarExperienciaModal"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+           
+        </div>
     </div>
   </section>
 

@@ -31,6 +31,9 @@
     font-weight: bold;
   }
   
+  .detailsHabilidad{
+    list-style: none;
+  }
   #habilidades .nav-link:hover{
     color: blueviolet;
   }
