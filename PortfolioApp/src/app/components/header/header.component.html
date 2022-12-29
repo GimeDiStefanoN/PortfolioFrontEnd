@@ -2,8 +2,8 @@
 
   <section id="inicio" class="inicio">
     <!-- HEADER - NAVBAR -->
-<header id="navegacion">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" id="encabezado">
+<header id="navegacion" >
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" >
         <div class="container-fluid">
             <!-- LOGO -->
             <img src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png" alt="logo Argentina Programa" width="120px" height="90px">
@@ -48,15 +48,16 @@
                         <a [href]="redesList.linkLinkedIn" target="_blank" rel="linkedin"><i class="bi bi-linkedin"></i></a> 
                         <small class="d-lg-none ms-2">Linkedin</small>
                     </li>
+                    <!-- BOTON INICIO DE SESION -->
+                    <li class="navbar-nav flex-row flex-wrap text-light" id="sesion">
+                        <app-login *ngIf="!mostrar"></app-login>
+                        <app-logout *ngIf="mostrar"></app-logout>
+                    </li>
                 </ul>
 
-                <!-- BOTON INICIO DE SESION -->
-                <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
-                    <app-login *ngIf="!mostrar"></app-login>
-                    <app-logout *ngIf="mostrar"></app-logout>   
-                </ul>
             </div>
         </div>
     </nav>
 </header>
+
 </section>

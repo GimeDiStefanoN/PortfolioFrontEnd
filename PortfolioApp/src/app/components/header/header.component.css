@@ -2,12 +2,12 @@
 #navegacion{
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 6666;
   }
 
-  #encabezado{
-    height: 90px;
-  }
+  /* #encabezado{
+    height: 75px;
+  } */
   #menu ul li a{
     text-decoration: none;
     color: white;
@@ -35,4 +35,5 @@
   #sesion button:hover{
     color: blueviolet;
   }
+  
   

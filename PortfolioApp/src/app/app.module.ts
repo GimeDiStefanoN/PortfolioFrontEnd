@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+//importamos routing, app component y http
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
-
+//importamos componentes secciones
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IndexComponent } from './components/index/index.component';
@@ -17,7 +17,7 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { LoginComponent } from './components/login/login.component';
-
+//importamos componentes modales
 import { ModalLoginComponent } from './modales/modal-login/modal-login.component';
 import { ModalBannerComponent } from './modales/modal-banner/modal-banner.component';
 import { ModalSobremiComponent } from './modales/modal-sobremi/modal-sobremi.component';
@@ -29,6 +29,9 @@ import { ModalEditHabilidadesComponent } from './modales/modales-habilidades/mod
 import { ModalAddHabilidadesComponent } from './modales/modales-habilidades/modal-add-habilidades/modal-add-habilidades.component';
 import { ModalEditProyectosComponent } from './modales/modales-proyectos/modal-edit-proyectos/modal-edit-proyectos.component';
 import { ModalAddProyectosComponent } from './modales/modales-proyectos/modal-add-proyectos/modal-add-proyectos.component';
+//importamos forms
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +55,7 @@ import { ModalAddProyectosComponent } from './modales/modales-proyectos/modal-ad
     ModalAddEducacionComponent,
     ModalEditExperienciaComponent,
     ModalAddExperienciaComponent,
-    ModalEditHabilidadesComponent,
+    ModalEditHabilidadesComponent, 
     ModalAddHabilidadesComponent,
     ModalEditProyectosComponent,
     ModalAddProyectosComponent
@@ -60,7 +63,9 @@ import { ModalAddProyectosComponent } from './modales/modales-proyectos/modal-ad
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
