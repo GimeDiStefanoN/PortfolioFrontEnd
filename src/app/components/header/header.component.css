@@ -1,0 +1,39 @@
+/* NAVEGACION */
+#navegacion{
+    position: fixed;
+    width: 100%;
+    z-index: 6666;
+  }
+
+  /* #encabezado{
+    height: 75px;
+  } */
+  #menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    transition: 0.5s;
+  }
+  #menu ul li a:hover{
+    color: blueviolet;
+  }
+  
+  #redes a{
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+  }
+  #redes ul li a:hover{
+    color: blueviolet;
+  }
+  
+  #sesion button{
+    color: white;
+    font-size: 30px;
+  }
+  
+  #sesion button:hover{
+    color: blueviolet;
+  }
+  
+  

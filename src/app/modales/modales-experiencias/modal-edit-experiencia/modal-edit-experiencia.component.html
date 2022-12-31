@@ -1,0 +1,48 @@
+<!-- MODAL EDITAR --> 
+<div class="modal fade" id="editExperienciaModal" tabindex="-1" aria-labelledby="editExperienciaModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form method="post" [formGroup]="form" (ngSubmit)="enviar()" novalidate name="editForm">
+            <div class="modal-body">
+                <div class="mb-3">
+                <label for="logo" class="col-form-label">Editar imagen Empresa:</label>
+                <input type="url" class="form-control" id="logo" placeholder="Ingresá la URL" formControlName="logo">
+                </div>
+                <span *ngIf="campoValido('logo')" class="text-danger">Se debe completar con la URL de una imagen</span>
+
+                <div class="mb-3">
+                <label for="puesto" class="col-form-label">Editar Puesto laboral:</label>
+                <input type="text" class="form-control" id="puesto" placeholder="Puesto laboral" formControlName="puesto">
+                </div>
+                <span *ngIf="campoValido('puesto')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="inicio" class="col-form-label">Editar Fecha Inicio:</label>
+                <input type="date" class="form-control" id="inicio" formControlName="inicio">
+                </div>
+                <span *ngIf="campoValido('inicio')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="fin" class="col-form-label">Editar Fecha Finalizacion:</label>
+                <input type="date" class="form-control" id="fin" formControlName="fin">
+                </div>
+                <span *ngIf="campoValido('fin')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="descripcion" class="col-form-label">Editar descripcion:</label>
+                <textarea class="form-control" id="descripcion" formControlName="descripcion"></textarea>
+                </div>
+                <span *ngIf="campoValido('descripcion')" class="text-danger">Es requerido</span>
+
+            </div>
+
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid">GUARDAR</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
