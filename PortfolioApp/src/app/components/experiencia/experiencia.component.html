@@ -1,0 +1,36 @@
+  <!-- SECCION EXPERIENCIA -->
+  <section id="editExperiencia" class="edit">
+    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#agregarExperienciaModal"><i class="fa-solid fa-plus"></i></button>
+  </section>
+
+
+  <section id="experiencia">
+    <div class="contenedor">
+        <p class="titulo-seccion">MIS EXPERIENCIAS</p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col" *ngFor="let experiencia of experienciaList"
+            >
+              <div class="card">
+                <img [src]="experiencia.logoEmpresa" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{experiencia.puesto}}</h5>
+                  <h6 class="fecha">{{experiencia.inicio}} - {{experiencia.fin}}</h6>
+                  <p class="card-text">{{experiencia.descripcion}}</p>
+                
+                  <div  class="edit">
+                    <button class="buttonedit" type="button" data-bs-toggle="modal" data-bs-target="#editExperienciaModal"><i class="fa-solid fa-pencil"></i></button>
+                    <button class="buttonborrar" type="button" data-bs-toggle="modal" data-bs-target="#borrarExperienciaModal"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+        </div>
+    </div>
+  </section>
+
+  <!-- aca va el modal de edicion -->
+  <app-modal-add-experiencia></app-modal-add-experiencia>
+  <app-modal-edit-experiencia></app-modal-edit-experiencia>
+  

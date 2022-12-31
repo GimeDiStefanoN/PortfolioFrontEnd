@@ -1,0 +1,287 @@
+{
+
+        "nombre": "Gimena",
+        "apellido": "Di Stefano Nicolina",
+        "fotoperfil": "../assets/img/foto-perfil-gdn.jpg",
+        "fotobanner": "../assets/img/banner_portfolio.jpeg",
+        "puesto": "FULL STACK DEVELOPER JR.",
+        "frase": " 'Si se puede imaginar,se puede programar' ",
+        "descripcionsobremi": " ¡Hola! Soy Gimena, de Córdoba, Argentina. Estudíe Contabilidad y siempre me apasionó la tecnología, por lo que continué mis estudios en programación. Busco crecer profesionalmente como Desarrollador Web Full Stack. Constantemente estoy en formación y poniendo en práctica lo aprendido. Me gustaría formar parte de diversos proyectos que me permitan desarrollar profesionalmente y mejorar mis habilidades.",
+        "linkGit": "https://github.com/GimeDiStefanoN",
+        "linkLinkedIn": "https://www.linkedin.com/in/gimena-di-stefano-nicolina/",
+    
+
+    "experiencias":[
+        {
+            "id": 3,
+            "empresa":"Freelance",
+            "logoEmpresa": "../assets/img/LogoFREELANCE.png",
+            "puesto": "Desarrollador Web",
+            "inicio": "Enero 2022 -",
+            "fin": "Actualidad",
+            "descripcion": "Realización de trabajos y proyectos de forma independiente. Diseño, manejo y mantenimiento de páginas y aplicaciones web."
+        },
+        {
+            "id": 2,
+            "empresa":"Voicenter S.A.",
+            "logoEmpresa": "../assets/img/LogoVoicenter.png",
+            "puesto": "Asesor CX  E-commerce",
+            "inicio": "Julio 2015 -",
+            "fin": "Noviembre 2022",
+            "descripcion": "Atención a través de canales digitales para Tienda Claro Argentina. El objetivo era mejorar y optimizar la experiencia del usuario del canal ecommerce de manera personalizada. Puesto de referente, liderando el equipo, asistiendo a mis compañeros, realizando monitoreos en acciones operativas en busca de incrementar la experiencia del cliente (indicador:NPS) y elaboración de reportes KPIs de la operación"
+        },
+        {
+            "id": 1,
+            "empresa":"Apex América",
+            "logoEmpresa": "../assets/img/LogoAPEX.png",
+            "puesto": "Ejecutivo de cuentas",
+            "inicio": "Febrero 2013 -",
+            "fin": "Diciembre 2013",
+            "descripcion": "Atención telefónica para American Express Argentina. Analisis de cuentas financieras atendiendo consultas telefónicas con el objetivo de agregarle valor a cada contacto recalcando beneficios y servicios del producto para mayor experiencia del cliente"
+        }
+       
+       
+    ],
+    "estudios":[
+        {
+            "id":4,
+            "logoinstitucion": "../assets/img/LogoARGPROG.png",
+            "urlinstitucion": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa",
+            "titulo": "WEB FULL STACK JUNIOR",
+            "inicio": "Mayo 2022 -",
+            "fin": "Actualidad",
+            "descripcion": "Programa formativo nacional en su tercera edición del #YoProgramo, en conjunto entre el Ministerio de Economía de Argentina y el INTI. Capacitación en Front End, Back End, Base de datos, DevOps. HTML, CSS, Angular, GIT, MySQL, Java, Spring Boot"
+        },
+        {
+            "id":3,
+            "logoinstitucion": "../assets/img/LogoISPC.png",
+            "urlinstitucion": "https://www.ispc.edu.ar/",
+            "titulo": "TECNICO SUPERIOR EN DESARROLLO WEB Y APLICACIONES DIGITALES",
+            "inicio": "Abril 2022 -",
+            "fin": " Actualidad",
+            "descripcion": "Carrera de 2 fechas y medio de duración, capacitación en base de datos, front end, back end, ciberseguridad, aplicaciones móviles, ingles, testeo de software "
+        },
+        {
+            "id":2,
+            "logoinstitucion": "../assets/img/LogoICARO.png",
+            "urlinstitucion": "https://icaro.org.ar/",
+            "titulo": "DIPLOMATURA EN DESARROLLO WEB FULL STACK",
+            "inicio": "Diciembre 2021 -",
+            "fin": "Actualidad",
+            "descripcion": "Capacitación integral tanto en front-end como en back-end, bases de datos, arquitectura web y metodologías ágiles. JavaScript, HTML, CSS, Angular9, React, GIT, MySQL, NodeJS"
+        },
+        {
+            "id":1,               
+            "logoinstitucion": "../assets/img/LogoUS21.png",
+            "urlinstitucion": "https://21.edu.ar/",
+            "titulo": "CONTADOR PUBLICO",
+            "inicio": "Julio  2017 -",
+            "fin": "Abril 2021",
+            "descripcion": "Egresada de la Universidad Empresarial Siglo 21, con promedio general de 7.53"
+        }
+        
+    ],
+
+    "habilidades":[
+       {"id":1,
+        "categoria": "HABILIDADES DURAS"
+       },
+       {"id":2,
+        "categoria": "HABILIDADES BLANDAS"
+       },   
+       {"id":3,
+        "categoria": "IDIOMAS"
+       }     
+    ],
+    "habilidadesDuras": [
+        {
+            "id":1,
+            "nombre":"HTML5",
+            "porcentaje":80
+        },
+        {
+            "id":2,
+            "nombre":"CSS3",
+            "porcentaje":80
+        },
+        {
+            "id":3,
+            "nombre":"BOOTSTRAMP",
+            "porcentaje":80
+        },
+        {
+            "id":4,
+            "nombre":"JAVASCRIPT",
+            "porcentaje":80
+        },
+        {
+            "id":5,
+            "nombre":"ANGULAR",
+            "porcentaje":80
+        },
+        {
+            "id":6,
+            "nombre":"GITHUB",
+            "porcentaje":80
+        },
+        {
+            "id":7,
+            "nombre":"JAVA",
+            "porcentaje":50
+        },
+        {
+            "id":8,
+            "nombre":"MySQL",
+            "porcentaje":80
+        },
+        {
+            "id":9,
+            "nombre":"TYPESCRIPT",
+            "porcentaje":70
+        },
+        {
+            "id":10,
+            "nombre":"REACT",
+            "porcentaje":0
+        },
+        {
+            "id":11,
+            "nombre":"NODE JS",
+            "porcentaje":50
+        },
+        {
+            "id":12,
+            "nombre":"EXPRESS",
+            "porcentaje":60
+        },
+        {
+            "id":13,
+            "nombre":"Spring Boot",
+            "porcentaje":50
+        }
+    ],
+    "habilidadesBlandas": [
+        {
+            "id":1,
+            "nombre":"Trabajo en equipo",
+            "porcentaje":90
+        },
+        {
+            "id":2,
+            "nombre":"Autodidacta",
+            "porcentaje":70
+        },
+        {
+            "id":3,
+            "nombre":"Metodologias Agiles",
+            "porcentaje":50
+        },
+        {
+            "id":4,
+            "nombre":"Resolución de problemas",
+            "porcentaje":80
+        },
+        {
+            "id":5,
+            "nombre":"Creatividad",
+            "porcentaje":75
+        },
+        {
+            "id":6,
+            "nombre":"Adaptabilidad",
+            "porcentaje":80
+        }
+    ],
+    "idiomas": [
+        {
+            "id":1,
+            "nombre":"ESPAÑOL",
+            "porcentaje":100
+        },
+        {
+            "id":2,
+            "nombre":"ITALIANO",
+            "porcentaje":70
+        },
+        {
+            "id":3,
+            "nombre":"INGLES",
+            "porcentaje":40
+        }
+    ],
+
+    "proyectos":[
+        {
+            "id":1,               
+            "imagen": "../assets/img/portfolio.jpg",
+            "titulo": "PORTFOLIO",
+            "fecha": 2022,
+            "descripcion": "Proyecto final realizado durante el curso de Web Full Stack Jr en Argentina Programa. Tecnologias utilizadas: HTML, CSS, Bootstrap, Angular, MySQL, Java, Springboot",
+            "urlCodigo": "https://github.com/GimeDiStefanoN/PortfolioFrontEnd",
+            "urlDemo": "https://portfoliobasic.vercel.app/"
+        },
+        {
+            "id":2,               
+            "imagen": "../assets/img/navbar.jpg",
+            "titulo": "NAVBAR",
+            "fecha": 2022,
+            "descripcion": "NavBar sencillo y clásico, incluye logo, menu, redes, login, logout, responsive. Tecnologias utilizadas: HTML, CSS, Bootstrap",
+            "urlCodigo": "https://github.com/GimeDiStefanoN/NavBar",
+            "urlDemo": "https://"
+        },
+        {
+            "id":3,               
+            "imagen": "../assets/img/calculadora.jpg",
+            "titulo": "CALCULADORA",
+            "fecha": 2021,
+            "descripcion": "Diseño de calculadora sencilla. Tecnologias utilizadas: HTML, CSS, Javascript",
+            "urlCodigo": "https://github.com/GimeDiStefanoN/CalculadoraDesafio",
+            "urlDemo": "https://"
+        },
+        {
+            "id":4,               
+            "imagen": "../assets/img/Preview website.jpg",
+            "titulo": "FORMULARIO LOGIN",
+            "fecha": 2022,
+            "descripcion": " Tecnologias utilizadas: HTML, CSS,",
+            "urlCodigo": "https://",
+            "urlDemo": "https://"
+        },
+        {
+            "id":5,               
+            "imagen": "../assets/img/Preview website.jpg",
+            "titulo": "CRUD",
+            "fecha": 2022,
+            "descripcion": " Tecnologias utilizadas: HTML, CSS,",
+            "urlCodigo": "https://",
+            "urlDemo": "https://"
+        },
+        {
+            "id":6,               
+            "imagen": "../assets/img/Preview website.jpg",
+            "titulo": "ECOMMERCE",
+            "fecha": 2022,
+            "descripcion": " Tecnologias utilizadas: HTML, CSS,",
+            "urlCodigo": "https://",
+            "urlDemo": "https://"
+        },
+        {
+            "id":7,               
+            "imagen": "../assets/img/Preview website.jpg",
+            "titulo": "CLONE WEB",
+            "fecha": 2022,
+            "descripcion": " Tecnologias utilizadas: HTML, CSS,",
+            "urlCodigo": "https://",
+            "urlDemo": "https://"
+        },
+        {
+            "id":8,               
+            "imagen": "../assets/img/Preview website.jpg",
+            "titulo": "API",
+            "fecha": 2022,
+            "descripcion": " Tecnologias utilizadas: ",
+            "urlCodigo": "https://",
+            "urlDemo": "https://"
+        }
+    ]
+}
