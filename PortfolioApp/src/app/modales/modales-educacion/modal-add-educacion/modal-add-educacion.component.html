@@ -5,33 +5,50 @@
         <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-        <form>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Imagen Institución:</label>
-            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+        <form method="post" [formGroup]="form" (ngSubmit)="enviar()" novalidate name="editForm">
+            <div class="modal-body">
+                <div class="mb-3">
+                <label for="logo" class="col-form-label">Imagen Institución:</label>
+                <input type="url" class="form-control" id="logo" placeholder="Ingresá la URL de la imagen" formControlName="logo">
+                </div>
+                <span *ngIf="campoValido('logo')" class="text-danger">Se debe completar con la URL de una imagen</span>
+
+                <div class="mb-3">
+                <label for="web" class="col-form-label">URL Institución:</label>
+                <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL de la web institucional" formControlName="web">
+                </div>
+                <span *ngIf="campoValido('web')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="titulo" class="col-form-label">Titulo:</label>
+                <input type="text" class="form-control" id="titulo" formControlName="titulo">
+                </div>
+                <span *ngIf="campoValido('titulo')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="inicio" class="col-form-label">Fecha Inicio:</label>
+                <input type="date" class="form-control" id="inicio" formControlName="inicio">
+                </div>
+                <span *ngIf="campoValido('inicio')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="fin" class="col-form-label">Fecha Finalizacion:</label>
+                <input type="date" class="form-control" id="fin" formControlName="fin">
+                </div>
+                <span *ngIf="campoValido('fin')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="descripcion" class="col-form-label">Descripcion:</label>
+                <textarea class="form-control" id="descripcion" formControlName="descripcion"></textarea>
+                </div>
+                <span *ngIf="campoValido('descripcion')" class="text-danger">Es requerido</span>
+
             </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Titulo:</label>
-            <input type="text" class="form-control" id="recipient-name">
-            </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Fecha Inicio:</label>
-            <input type="date" class="form-control" id="recipient-date">
-            </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Fecha Finalizacion:</label>
-            <input type="date" class="form-control" id="recipient-date">
-            </div>
-            <div class="mb-3">
-            <label for="message-text" class="col-form-label">Descripcion:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" [disabled]="form.invalid">AGREGAR</button>
             </div>
         </form>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-primary">AGREGAR</button>
-        </div>
     </div>
     </div>
 </div>

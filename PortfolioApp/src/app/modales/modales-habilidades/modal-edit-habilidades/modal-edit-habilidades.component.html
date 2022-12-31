@@ -5,30 +5,37 @@
         <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-        <form>
-            <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Seleccionar categoria:</label>
-                <select name="categoria" class="form-control" id="recipient-categoria">
-                    <option selected disabled>Elegir una opcion</option>
-                    <option value="duras">Habilidades Duras</option>
-                    <option value="blandas">Habilidades Blandas</option>
-                    <option value="idiomas">Idiomas</option>
-                </select>
+        <form method="post" [formGroup]="form" (ngSubmit)="enviar()" novalidate name="editForm">
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="categoria" class="col-form-label">Seleccionar categoria:</label>
+                    <select name="categoria" class="form-control" id="categoria" formControlName="categoria">
+                        <option selected disabled>Elegir una opcion</option>
+                        <option value="duras">Habilidades Duras</option>
+                        <option value="blandas">Habilidades Blandas</option>
+                        <option value="idiomas">Idiomas</option>
+                    </select>
+                </div>
+                <span *ngIf="campoValido('categoria')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="nombre" class="col-form-label">Editar habilidad:</label>
+                <input type="text" class="form-control" id="nombre" formControlName="nombre">
+                </div>
+                <span *ngIf="campoValido('nombre')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="porcentaje" class="col-form-label">Editar porcentaje de conocimiento:</label>
+                <input type="number" class="form-control" id="porcentaje" formControlName="porcentaje">
+                </div>
+                <span *ngIf="campoValido('porcentaje')" class="text-danger">Es requerido. Debe ser un valor entre 0 y 100</span>
+
             </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Editar habilidad:</label>
-            <input type="text" class="form-control" id="recipient-name">
-            </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Editar porcentaje de conocimiento:</label>
-            <input type="number" class="form-control" id="recipient-number">
+
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid">GUARDAR</button>
             </div>
         </form>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-primary">GUARDAR</button>
-        </div>
     </div>
     </div>
 </div>

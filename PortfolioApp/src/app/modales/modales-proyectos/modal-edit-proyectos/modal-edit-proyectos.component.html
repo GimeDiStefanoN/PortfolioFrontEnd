@@ -5,37 +5,50 @@
         <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-        <form>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Editar imagen Poyecto:</label>
-            <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá la URL">
+        <form method="post" [formGroup]="form" (ngSubmit)="enviar()" novalidate name="editForm">
+            <div class="modal-body">
+                <div class="mb-3">
+                <label for="img" class="col-form-label">Editar imagen Poyecto:</label>
+                <input type="url" class="form-control" id="img" placeholder="Ingresá la URL" formControlName="img">
+                </div>
+                <span *ngIf="campoValido('img')" class="text-danger">Se debe completar con la URL de una imagen</span>
+
+                <div class="mb-3">
+                <label for="nombre" class="col-form-label">Editar Nombre del proyecto:</label>
+                <input type="text" class="form-control" id="nombre" formControlName="nombre">
+                </div>
+                <span *ngIf="campoValido('nombre')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="fecha" class="col-form-label">Editar Fecha:</label>
+                <input type="date" class="form-control" id="fecha" formControlName="fecha">
+                </div>
+                <span *ngIf="campoValido('fecha')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                <label for="descripcion" class="col-form-label">Editar descripcion:</label>
+                <textarea class="form-control" id="descripcion" placeholder="Ejemplo: Herramientas utilizadas, funcionalidad" formControlName="descripcion"></textarea>
+                </div>
+                <span *ngIf="campoValido('descripcion')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                    <label for="urlcodigo" class="col-form-label">Editar Link Codigo:</label>
+                    <input type="url" class="form-control" id="urlcodigo" placeholder="Ingresá link del codigo" formControlName="urlcodigo">
+                </div>
+                <span *ngIf="campoValido('urlcodigo')" class="text-danger">Es requerido</span>
+
+                <div class="mb-3">
+                    <label for="urldemo" class="col-form-label">Editar Link Demo:</label>
+                    <input type="url" class="form-control" id="urldemo" placeholder="Ingresá link del Demo" formControlName="urldemo">
+                </div>
+                <span *ngIf="campoValido('urldemo')" class="text-danger">Es requerido</span>
+
             </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Editar Nombre del proyecto:</label>
-            <input type="text" class="form-control" id="recipient-name" >
-            </div>
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Editar Fecha:</label>
-            <input type="date" class="form-control" id="recipient-date">
-            </div>
-            <div class="mb-3">
-            <label for="message-text" class="col-form-label">Editar descripcion:</label>
-            <textarea class="form-control" id="message-text" placeholder="Ejemplo: Herramientas utilizadas, funcionalidad"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Editar Link Codigo:</label>
-                <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá link del codigo">
-            </div>
-            <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Editar Link Demo:</label>
-                <input type="url" class="form-control" id="recipient-name" placeholder="Ingresá link del Demo">
+
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid">GUARDAR</button>
             </div>
         </form>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-primary">GUARDAR</button>
-        </div>
     </div>
     </div>
 </div>
